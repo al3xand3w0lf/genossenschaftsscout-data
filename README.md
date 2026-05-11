@@ -1,0 +1,1 @@
+# genossenschaftsscout-data

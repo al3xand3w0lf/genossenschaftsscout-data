@@ -130,9 +130,7 @@
             'Frei nutzbar unter CC BY 4.0 für Recherche, Journalismus und Forschung.';
           if (META.aktualisiert) n.dateModified = META.aktualisiert;
           n.temporalCoverage = k.temporal;
-          n.measurementTechnique = 'Automatisiertes Scraping öffentlicher Inserate von Genossenschafts-Webseiten, Homegate und ' +
-            'ImmoScout. Bereinigung um unvollständige und unplausible Einträge. PLZ-zu-Quartier-Mapping nach ' +
-            'Stadt-Zürich-Statistik. Median statt Durchschnitt zur Robustheit gegen Ausreisser.';
+          delete n.measurementTechnique;  // Erhebungsweise ist Betriebsgeheimnis (Nutzer 09.10.2026)
           n.citation = 'genossenschaftsscout.ch (' + k.jahr_bis + '). Inseratedatensatz Zürcher Wohnbaugenossenschaften ' +
             k.jahr_von + ' bis ' + k.jahr_bis + '. Lizenz CC BY 4.0.';
         }
